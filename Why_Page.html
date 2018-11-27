@@ -1,52 +1,33 @@
 <!DOCTYPE html>
-<div id="navbar">
-  <title>Veganism</title>
-  <a href="#home_page.html"> <img src="logo.jpg"></a>
-  <br>
-  <br>
-  <a href="#why_page.html">Veganism</a>
-  <a href="#recipes">Recipes</a>
-  <a href="#locations.html">Locations</a>
-</div>
-<style>
-#navbar {
-  overflow: hidden;
-  background-color: #C1D7D7;
-}
-#navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  font-family:sans-serif;
-  font-weight: bolder;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-</style>
-<script>
-window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
+
 <head>
   <title>Veganism</title>
-  <link rel="stylesheet" type="text/css" href="Why_Page_CSS.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Why_Page.css">
   <link href 'css/bootstrap.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial scale=1.0">
 </head>
 <body>
+  <br><br><br><br><br><br>
+  <div class="wrapper">
+    <div class="logo">
+      <img src="logo.jpg" alt="">
+    </div>
+    <ul class="nav-area">
+      <li><a href="home_page.html">HOME</a></li>
+      <li><a href="Why_Page.html">VEGANISM</a></li>
+      <li><div href='#' class="dropdown">
+          <button class="dropbtn">RECIPES</button>
+          <div class="dropdown-content">
+            <a href="mains.html">MAINS</a>
+            <a href="breakfast.html">BREAKFAST</a>
+            <a href="desserts.html">DESSERTS</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="locations.html">LOCATIONS</a></li>
+    </ul>
+  </div>
 <div class="content">
   <h3>Health</h3>
   <p>Veganism is great for health because it helps prevent numerous diseases for example cardiovascular disease and cholesterol. <br>
