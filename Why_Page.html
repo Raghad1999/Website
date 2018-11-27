@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<div id="navbar">
+  <a href="#home"> <img src="logo.png"></a>
+  <br>
+  <br>
+  <a href="#veganism">Veganism</a>
+  <a href="#recipes">Recipes</a>
+  <a href="#locations">Locations</a>
+</div>
+<style>
+#navbar {
+  overflow: hidden;
+  background-color: #C1D7D7;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  font-family:sans-serif;
+  font-weight: bolder;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+</style>
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<head>
+  <title>Veganism</title>
+  <link rel="stylesheet" type="text/css" href="Why_Page_CSS.css">
+  <link href 'css/bootstrap.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+</head>
+<body>
+<div class="content">
+  <h3>Health</h3>
+  <p>Veganism is great for health because it helps prevent numerous diseases for example cardiovascular disease and cholesterol. <br>
+  It is also easier to have a nutritious lifestyle wsith vagn diets often being low in saturated fats and being high in fibre and vitamins.<br>
+  Vegan lifestyles often leads to added benefits such as stronger hair, nails, reduced menstrual pains and increased weight loss.<br>
+  For more information and statistics please visit the cowspiracy website. </p>
+<img src="eco.jpg">
+  <h3>Environment</h3>
+  <p>Animal agriculture is the leading cause to the deforestation of the Amazon rainforest and uses 3/4 of the worlds water supply.<br>
+  By becoming vegan people are reducing their carbon footprint, the amount of greenhouse gases they contribute to the atmosphere and the environment. <br>
+   Vegans also require less land for their diets than meats (less than three times the amount) and therefore contribute to a more sustainable living. </p>
+  <img src="turtle.jpg">
+  <h3>Compassion</h3>
+  <p>Imagine being born into the world for the sole purpose of becoming food for another species. But imagine also having terrible living conditions,<br>
+  being crammed with others like you, be fed to be fat (like Hansel and Gretel) and never be allowed out to enjoy grass and what comes naturally to you.<br>
+  Then imagine being slaughtered and cooked to be food. That is a cruel existence. Billions of animals are slaughtered each year to become food. <br>
+  Animals that all feel pain, want to feel love and want to live. Animals are a lot like humans in many ways, for example did you know that cows <br>
+  have best friends and can get depressed when away from them. Did you also know that pigs are known to be just as smart as dogs if not more than. <br> </p>
+  <img src="cow_lick.jpg">
+</div>
+<footer>
+ <h4> Contact us on social media!</h4>
+</footer>
+</body>
+
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+img {
+  padding-left: 60px;
+}
+h3 {
+  font-weight: bolder;
+  font-size: 17px;
+  text-align: left;
+  font-family: sans-serif;
+  padding: 0px 0px 0px 60px;
+  color: #A0A0A0;
+}
+p {
+  padding-left: 60px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+footer {
+  background-color: #C1D7D7;
+}
+h4 {
+  font-family: sans-serif;
+  padding: 15px 0px 0px 15px;
+  color: white;
+}
+#footer a{
+  padding-left: 15px;
+}
+</style>
